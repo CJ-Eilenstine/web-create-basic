@@ -1,0 +1,20 @@
+{
+  "name": "web-create-basic",
+  "version": "0.1.0",
+  "bin": {
+    "create-web-basic": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "templates/",
+    "readme.md"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Creates folder to start basic web project."
+}
