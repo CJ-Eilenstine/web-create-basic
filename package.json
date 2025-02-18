@@ -1,6 +1,6 @@
 {
   "name": "web-create-basic",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bin": {
     "create-web-basic": "./index.js"
   },
