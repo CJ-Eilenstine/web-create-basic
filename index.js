@@ -28,6 +28,20 @@ app.question("Name of Project:", function (projectName) {
     fs.mkdirSync(stylesDirectory);
   }
 
+  // Grabbing Webfile and Server file and making them inside functions folder for every new project
+  const WebFile = path.join(__dirname, "lib/webfile.js");
+  fs.writeFileSync(
+    path.join(functionsDirectory, "webfile.js"),
+    fs.readFileSync(WebFile)
+  );
+
+  const ServerFile = path.join(__dirname, "lib/server.js");
+  fs.writeFileSync(
+    path.join(functionsDirectory, "server.js"),
+    fs.readFileSync(ServerFile)
+  );
+  // Note Close
+
   fs.writeFileSync(
     indexFile,
     `
