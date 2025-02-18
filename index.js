@@ -8,7 +8,7 @@ const app = readline.createInterface({
 });
 
 app.question("Name of Project:", function (projectName) {
-  const projectDirectory = path.join("output", projectName);
+  const projectDirectory = path.join(process.cwd(), projectName);
   const functionsDirectory = path.join(projectDirectory, "functions");
   const stylesDirectory = path.join(projectDirectory, "css");
   const cssFile = path.join(stylesDirectory, "styles.css");
