@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const path = require("path");
 const fs = require("fs");
 const readline = require("readline");
@@ -37,7 +38,7 @@ app.question("Name of Project:", function (projectName) {
 
   const ServerFile = path.join(__dirname, "lib/server.js");
   fs.writeFileSync(
-    path.join(functionsDirectory, "server.js"),
+    path.join(projectDirectory, "server.js"),
     fs.readFileSync(ServerFile)
   );
   // Note Close
